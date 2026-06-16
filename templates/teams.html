@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Teams
+    </title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <h2 class="logo">
+            WorldCupPredictor
+        </h2>
+
+        <div class="nav-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/teams">
+                Explore Teams
+            </a>
+
+            <a href="#">
+                Match Simulator
+            </a>
+
+            <a href="#">
+                Tournament Simulator
+            </a>
+
+        </div>
+
+    </nav>
+
+    <h1 class="page-title">
+        World Cup Teams
+    </h1>
+
+    <div class="teams-container">
+
+        {% for team in teams %}
+
+        <div class="team-card">
+
+            <h2>
+                {{ team.Name }}
+            </h2>
+
+            <p>
+                FIFA Ranking:
+                {{ team.FIFA_Ranking }}
+            </p>
+
+            <p>
+                ELO Rating:
+                {{ team.ELO }}
+            </p>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</body>
+
+</html>

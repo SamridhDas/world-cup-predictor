@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        WorldCupPredictor
+    </title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <h2 class="logo">
+            WorldCupPredictor
+        </h2>
+
+        <div class="nav-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/teams">
+                Explore Teams
+            </a>
+
+            <a href="#">
+                Match Simulator
+            </a>
+
+            <a href="#">
+                Tournament Simulator
+            </a>
+
+        </div>
+
+    </nav>
+    <section class="flags-banner">
+
+    
+
+        <div class="flags-track">
+
+            <div class="flags-group">
+                🇦🇷 🇧🇷 🇫🇷 🇪🇸 🇩🇪 🇵🇹 🇳🇱 🇧🇪 🇮🇹 🇺🇾 🇲🇽 🇺🇸 🇨🇦 🇯🇵 🇰🇷 🇦🇺
+            </div>
+
+            <div class="flags-group">
+                🇦🇷 🇧🇷 🇫🇷 🇪🇸 🇩🇪 🇵🇹 🇳🇱 🇧🇪 🇮🇹 🇺🇾 🇲🇽 🇺🇸 🇨🇦 🇯🇵 🇰🇷 🇦🇺
+            </div>
+
+        </div>
+
+    </section>
+
+    </section>
+
+    <section class="hero">
+        
+    
+
+        <h1>
+            Predict FIFA World Cup 2026
+        </h1>
+
+        <p>
+            Explore team statistics,
+            simulate matches,
+            and predict the winner
+            of football's biggest tournament.
+        </p>
+        <img src="{{ url_for('static', filename='worldcup.png') }}"
+            class="trophy-image">
+        
+
+    </section>
+   
+
+</body>
+
+</html>

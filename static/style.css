@@ -1,0 +1,161 @@
+body{
+
+    margin:0;
+
+    background:#0f172a;
+
+    color:white;
+
+    font-family:Arial,sans-serif;
+}
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 60px;
+
+    background:#111827;
+}
+
+.logo{
+
+    font-size:28px;
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+}
+
+.hero{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    margin-top:30px;
+}
+
+.hero h1{
+
+    font-size:64px;
+}
+
+.hero p{
+
+    font-size:22px;
+}
+
+.page-title{
+
+    text-align:center;
+
+    margin-top:50px;
+}
+
+.teams-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    padding:50px;
+}
+
+.team-card{
+
+    background:#111827;
+
+    padding:25px;
+
+    border-radius:15px;
+}
+.trophy-image{
+
+    width:180px;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+    animation:float 3s ease-in-out infinite;
+}
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+    }
+
+    100%{
+
+        transform:translateY(0px);
+    }
+}
+.flags-banner{
+
+    width:100%;
+
+    overflow:hidden;
+}
+
+.flags-track{
+
+    display:flex;
+
+    width:max-content;
+
+    animation:marquee 10s linear infinite;
+}
+
+.flags-group{
+
+    display:flex;
+
+    gap:30px;
+
+    font-size:60px;
+
+    white-space:nowrap;
+
+    padding-right:30px;
+}
+@keyframes marquee{
+
+    from{
+
+        transform:translateX(0);
+    }
+
+    to{
+
+        transform:translateX(
+            calc(-100% / 2)
+        );
+    }
+}
